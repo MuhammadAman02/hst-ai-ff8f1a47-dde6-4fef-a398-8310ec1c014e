@@ -1,11 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import '../styles/HelloWorld.css';
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-hello-blue to-blue-600">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+        <h1 className="text-6xl md:text-8xl font-bold text-white mb-4 animate-fade-in">
+          Hello World <span className="waving-hand">👋</span>
+        </h1>
+        <p className="text-xl md:text-2xl text-blue-100">
+          Welcome to your simple and elegant page!
+        </p>
       </div>
     </div>
   );
